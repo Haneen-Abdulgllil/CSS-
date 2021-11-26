@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <title>CSS Units & Box Shadow</title>
+</head>
+<body>
+
+        <a href="#head"><img src="upbutton.png" id="fixedbutton" style="width: 50px; height:50px;" ></a>
+    <nav id="head">
+        <div class="topnav" id="myTopnav">
+            <a href="#logo" id="logo"><img src="logo1.svg"></a>
+
+            <div class="dropdown">
+              <button class="dropbtn">Box Shadow
+
+              </button>
+              <div class="dropdown-content">
+                <a href="#Properties">Properties</a>
+                <a href="#Examples">Examples</a>
+               
+              </div>
+            </div>
+            <div class="dropdown">
+                    <button class="dropbtn">CSS Units
+      
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#Relative">Relative</a>
+                      <a href="#Absolute">Absolute</a>
+                     
+                    </div>
+                  </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+    </nav>
+
+
+     <section id="Properties">
+            <h3>Box Shadow Properties</h3>
+            <div class="grid">
+               
+                    <div class="div1">
+                            This is a div element with a box-shadow:<br>
+                             box-shadow: <span style="color:red;">10px 10px</span>; 
+                    </div>
+                    <div class="div1_1">
+                            This is a div element with a box-shadow:<br>
+                            box-shadow: <span style="color:red;">-10px -10px</span>; 
+                    </div>
+                    
+                    <div class="div2">
+                                box-shadow with color:<br><br>
+                                box-shadow: 10px 10px <span style="color:red;"> grey</span>;
+                    </div>
+                    <div class="div3">
+                                box-shadow with blur effect: <br><br>
+                                box-shadow: 10px 10px <span style="color:red;"> 5px </span> grey;
+                    </div>
+                    <div class="div3_3">
+                                box-shadow with blur effect from four sides:<br><br>
+                                box-shadow:<span style="color:red;"> 0px 0px</span>  10px </span> grey;
+                    </div>
+                    <div class="div4">
+                                box-shadow with spread radius:<br><br>
+                                box-shadow: 10px 10px 5px <span style="color:red;">12px</span> grey;
+        
+                    </div>
+                    <div class="div5">
+                                box-shadow with inset parameter:<br><br>
+                                box-shadow: 10px 10px 5px grey<span style="color:red;"> inset</span> ;
+                    </div>
+                    <div class="div6">
+                                Multiple shadows:<br><br>
+                                box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+                    </div>
+                    <div class="div7">
+                                Multiple shadows:<br><br>
+                                box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+                    </div>
+                    <div class="div8">
+                                box-shadow with none parameter:<br><br>
+                                box-shadow: <span style="color:red;"> none</span> ;
+                    </div>
+                    <div class="div9">
+                                box-shadow with initial parameter:<br><br>
+                                box-shadow: <span style="color:red;"> initial</span> ;
+                    </div>
+                    <div class="div10">
+                            <div class="div11">
+                                box-shadow with inherit parameter:<br>
+                                box-shadow: <span style="color:red;"> inherit</span> ;
+                            </div>
+                               
+                    </div>
+                   
+            </div>
+     </section>
+
+     <section id="Examples">
+                <h3>Exaples for using box shadow</h3>
+                <div class="flex">
+
+                <div class="card">
+                        <div class="header">
+                        <h1>BTS</h1>
+                        </div>
+                        
+                        <div class="container">
+                        <p>Jun. 13, 2013</p>
+                        </div>
+                </div>
+                <div class="polaroid">
+                        <img src="top-london-24.jpg" alt="Norway" style="width:100%;">
+                        <div class="container">
+                        <p>London, the United Kingdom</p>
+                        </div>
+                </div>
+
+                </div>
+     </section>
+
+  <section id="Relative" style="margin-top:100px;">
+          <h3>Relative Units</h3>
+          <div class="relative">
+            <div class="units">
+                <h4>em</h4>
+                <p>Relative to the font-size of the element (2em means 2 times the size of the current font)                                </p>
+                <h4>ex</h4>
+                <p>Relative to the x-height of the current font (rarely used)</p>
+                <h4>ch</h4>
+                <p>Relative to the width of the "0" (zero)</p>
+                <h4>rem</h4>
+                <p>Relative to font-size of the root element</p>
+                <h4>vw</h4>
+                <p>Relative to 1% of the width of the viewport*</p>
+                <h4>vh</h4>
+                <p>Relative to 1% of the height of the viewport*</p>
+                <h4>vmin</h4>
+                <p>Relative to 1% of viewport's* smaller dimension</p>
+                <h4>vmax</h4>
+                <p>Relative to 1% of viewport's* larger dimension</p>
+                <h4>%</h4>
+                <p>Relative to the parent element</p>
+
+
+             </div>
+               
+
+          </div>
+
+  </section>
+
+
+<section id="Absolute" style="margin-top:100px;">
+        <h3>Absolute Units </h3>
+        <div class="absolute">
+                <div class="units">
+                        <h4>cm</h4>
+                        <p>centimeters</p>
+                        <h4>mm</h4>
+                        <p>millimeters</p>
+                        <h4>in</h4>
+                        <p>inches (1in = 96px = 2.54cm)</p>
+                        <h4>px</h4>
+                        <p>pixels (1px = 1/96th of 1in)</p>
+                        <h4>pt</h4>
+                        <p>points (1pt = 1/72 of 1in)</p>
+                        <h4>pc</h4>
+                        <p>picas (1pc = 12 pt)</p>
+                 </div>
+        </div>
+    
+</section>
+
+
+<footer>
+        <div class="copyrights">
+                <span>Copyright &copy; </span>
+                <span>2021 Design by Haneen</a></span>
+        </div>
+</footer>
+
+   
+   
+   
+   <script>
+                        function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+                }
+    </script>
+  
+</body>
+</html>
